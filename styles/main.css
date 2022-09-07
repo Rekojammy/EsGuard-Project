@@ -1,0 +1,61 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.body-content{
+    overflow-y: scroll;
+}
+@font-face {
+    font-family: "clash-display";
+    src: url(../fonts/ClashDisplay/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
+}
+@font-face {
+    font-family: "soleil";
+    src: url(../fonts/soleil-cufonfonts/SoleilLight.otf);
+}
+.primary-font{
+    font-family: "clash-display";
+}
+.secondary-font{
+    font-family: "soleil";
+}
+.secondary-text{
+    color: #828282;
+    font-size: 13px;
+}
+.title-text{
+    color: #5D5FEF;
+}
+#index-screen{
+    background-image: url(../images/index-bg.svg);
+    background-size: contain;
+}
+.btn{
+    background: #5D5FEF;
+}
+.btn-danger{
+    background: #EB5757;
+}
+form input{
+    background: rgba(165, 166, 246, 0.1)!important;
+    border: 1px solid #A5A6F6!important;
+    border-radius: 8px!important;
+}
+.residents-card{
+    background: rgba(222, 222, 252, 0.1);
+}
+#admin-resident-card{
+    background: rgba(222, 222, 252, 0.4);
+}
+nav{
+    height: fit-content;
+    background: #F1F1FE8F;
+    border: 1px solid #E0E0E0
+}
+.card{
+    background: #A5A6F61A;
+    height: 20vh;
+}
+/* .title{
+    color: #5D5FEF;
+} */
