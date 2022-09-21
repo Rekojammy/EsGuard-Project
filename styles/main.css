@@ -88,3 +88,52 @@ nav{
     background: #A5A6F61A;
     height: 20vh;
 }
+.modal{
+    /* display: flex; */
+    position: absolute!important;
+    top: 90px!important;
+    width: 260px!important;
+    height: 200px!important;
+    overflow: hidden!important;
+}
+
+
+    /*Preloader animations*/
+
+    @keyframes shrink {
+        0% {
+          width: 50px;
+        }
+        50% {
+          width: 30px;
+        }
+        100% {
+          width: 50px;
+        }
+      }
+      
+      @keyframes grow {
+          0% {
+          width: 70px;
+        }
+        50% {
+          width: 100px;
+        }
+        100% {
+          width: 70px;
+        }
+      }
+      
+      .sheild {
+          width: 50px;
+        animation-name: shrink;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+      
+      .name {
+          width: 100px;
+        animation-name: grow;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
