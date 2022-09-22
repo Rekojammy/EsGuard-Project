@@ -1,139 +1,184 @@
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
-.body-content{
+
+.body-content {
     overflow-y: scroll;
 }
+
 @font-face {
     font-family: "clash-display";
     src: url(../fonts/ClashDisplay/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf);
 }
+
 @font-face {
     font-family: "soleil";
     src: url(../fonts/soleil-cufonfonts/SoleilLight.otf);
 }
-.primary-font{
+
+.primary-font {
     font-family: "clash-display";
 }
-.secondary-font{
+
+.secondary-font {
     font-family: "soleil";
 }
-.secondary-text{
+
+.secondary-text {
     color: #828282;
     font-size: 15px;
 }
-.title-text{
+
+.title-text {
     color: #5D5FEF;
 }
-#index-screen{
+
+#index-screen {
     background-image: url(../images/index-bg.svg);
     background-size: contain;
 }
-.btn{
-    background: #5D5FEF!important;
+
+.btn {
+    background: #5D5FEF !important;
 }
-.btn:hover{
-    background-color: #4b4dcf!important;
+
+.btn:hover {
+    background-color: #4b4dcf !important;
 }
-.btn-danger{
-    background: #EB5757!important;
+
+.btn-danger {
+    background: #EB5757 !important;
 }
-.btn-danger:hover{
-    background-color: #db3434!important;
+
+.btn-danger:hover {
+    background-color: #db3434 !important;
 }
-.btn-deactivate{
-    background-color: white!important;
-    color: #EB5757!important;
-    border-color: #EB5757!important;
+
+.btn-deactivate {
+    background-color: white !important;
+    color: #EB5757 !important;
+    border-color: #EB5757 !important;
 }
-.btn-deactivate:hover{
-    background: #EB5757!important;
-    color: white!important;
+
+.btn-deactivate:hover {
+    background: #EB5757 !important;
+    color: white !important;
 }
-.btn-activate{
-    background-color: white!important;
+
+.btn-activate {
+    background-color: white !important;
     border-color: #5D5FEF;
-    color: #5D5FEF!important;
+    color: #5D5FEF !important;
 }
-.btn-activate:hover{
-    background-color: #5D5FEF!important;
-    color: white!important;
+
+.text-activate {
+    color: #5D5FEF !important;
+    font-weight: 700 !important;
 }
-.btn-logout{
-    background-color: rgba(252, 222, 222, 0.19)!important;
-    color: #EB5757!important;
+
+.btn-activate:hover {
+    background-color: #5D5FEF !important;
+    color: white !important;
 }
-.btn-logout:hover{
-    background-color: rgba(252, 222, 222, 0.395)!important;
-    color: #EB5757!important;
+
+.btn-logout {
+    background-color: rgba(252, 222, 222, 0.19) !important;
+    color: #EB5757 !important;
 }
-form input{
-    background: rgba(165, 166, 246, 0.1)!important;
-    border: 1px solid #A5A6F6!important;
-    border-radius: 8px!important;
+
+.btn-logout:hover {
+    background-color: rgba(252, 222, 222, 0.395) !important;
+    color: #EB5757 !important;
 }
-.card_{
+
+form input {
+    background: rgba(165, 166, 246, 0.1) !important;
+    border: 1px solid #A5A6F6 !important;
+    border-radius: 8px !important;
+}
+
+.card_ {
     background: rgba(222, 222, 252, 0.1);
 }
-.lead-card{
+
+.lead-card {
     background: rgba(222, 222, 252, 0.4);
 }
-nav{
+
+nav {
     height: fit-content;
     background: #F1F1FE8F;
     border: 1px solid #E0E0E0
 }
-.card{
+
+.card {
     background: #A5A6F61A;
     height: 20vh;
 }
-.modal{
+
+.modal {
     /* display: flex; */
-    position: absolute!important;
-    top: 90px!important;
-    width: 260px!important;
-    height: 200px!important;
-    overflow: hidden!important;
+    position: absolute !important;
+    top: 90px !important;
+    width: 260px !important;
+    height: 200px !important;
+    overflow: hidden !important;
 }
 
+.fs-7 {
+    font-size: 13px;
+}
+.-mt-10 {
+    margin-top: -15px;
+}
+.mt-7 {
+    margin-top: 100px;
+}
+.mb-7 {
+    margin-bottom: 100px;
+}
 
-    /*Preloader animations*/
+/*Preloader animations*/
 
-    @keyframes shrink {
-        0% {
-          width: 50px;
-        }
-        50% {
-          width: 30px;
-        }
-        100% {
-          width: 50px;
-        }
-      }
-      
-      @keyframes grow {
-          0% {
-          width: 70px;
-        }
-        50% {
-          width: 100px;
-        }
-        100% {
-          width: 70px;
-        }
-      }
-      
-      .sheild {
-          width: 50px;
-        animation-name: shrink;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-      }
-      
-      .name {
-          width: 100px;
-        animation-name: grow;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-      }
+@keyframes shrink {
+    0% {
+        width: 50px;
+    }
+
+    50% {
+        width: 30px;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+
+@keyframes grow {
+    0% {
+        width: 70px;
+    }
+
+    50% {
+        width: 100px;
+    }
+
+    100% {
+        width: 70px;
+    }
+}
+
+.sheild {
+    width: 50px;
+    animation-name: shrink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.name {
+    width: 100px;
+    animation-name: grow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
