@@ -117,13 +117,14 @@ nav {
     height: 20vh;
 }
 
-.modal {
-    /* display: flex; */
+.modals {
+    display: none;
     position: absolute !important;
     top: 90px !important;
     width: 260px !important;
     height: 200px !important;
     overflow: hidden !important;
+    z-index: 2;
 }
 
 .fs-7 {
